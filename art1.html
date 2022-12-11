@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creative Studio</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="B.css">
+<link rel="stylesheet" href="v.css">
+<script src="home.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      
+	* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #3399cc7e;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/11 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:#3399cc;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .contents {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: #3399cc7e; /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+    </style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Animations 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="videos.html">Black Death Pack Intro</a>
+      <a href="video1.html">Savage Queen Intro</a>
+      <a href="video2.html">Family Manor</a>
+	  <a href="video3.html">Old Vitalis Look</a>
+	  <a href="video4.html">We Remained</a>
+	  <a href="video5.html">The Chronicles of Lore</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Art Galary
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="art1.html">Art Room</a>
+
+     
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Family Manor 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="ch1.html">Chapter 1</a>
+      <a href="ch2.html">Chapter 2</a>
+	  <a href="ch3.html">Chapter 3</a>
+      <a href="ch4.html">Chapter 4</a>
+	  <a href="ch5.html">Chapter 5</a>
+      <a href="ch6.html">Chapter 6</a>
+	  <a href="ch7.html">Chapter 7</a>
+      <a href="ch8.html">Chapter 8</a>
+	  <a href="ch9.html">Chapter 9</a>
+      <a href="ch10.html">Chapter 10</a>
+    </div>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn">Northern Mountian
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="c1.html">Prologue</a>
+      <a href="c2.html">Chapter 1</a>
+     
+    </div>
+  </div>
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+</div>
+
+<body>
+
+<div class="container"> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="1.png" style="width:100%">
+   <div class="contents">
+  <div class="text">Northern Mountains<a href="https://medibang.com/picture/542210300653144590001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="2.png" style="width:100%">
+   <div class="contents">
+  <div class="text">Silky<a href="https://medibang.com/picture/g42111130337145810001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="3.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Alpha Females of MNW<a href="https://medibang.com/picture/q11811020553172890001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="4.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Pixie/RagDoll<a href="https://medibang.com/picture/f11902200559490390001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="5.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Mmamotse<a href="https://medibang.com/picture/lk2107031607237630001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="6.png" style="width:100%">
+  <div class="contents">
+  <div class="text">MLP-Autumn<a href="https://medibang.com/picture/892008221318414750001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="7.png" style="width:100%">
+  <div class="contents">
+  <div class="text">The Rolls<a href="https://medibang.com/picture/go2211180903103560001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="8.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Neytiri the Leoponess<a href="https://medibang.com/picture/u72205070457194420001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9/ 11</div>
+  <img src="9.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Mmamotse Goddess of the Stars and the Moon<a href="https://medibang.com/picture/ez2010210154499470001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10/ 11</div>
+  <img src="10.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Vitalis's Realism Style<a href="https://medibang.com/picture/ly2206020705576230001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="11.png" style="width:100%">
+  <div class="contents">
+  <div class="text">Plum Blossom Tree-Northern Mountains<a href="https://medibang.com/picture/dq2211251611057960001320926/"><i>Art Link</i></a></div>
+  </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+   <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  
+</div>
+	</div>
+	
+<br>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+<br>
+<div class="foot">
+
+  <p>Niaomi James |12/9/22|- Vitalis The Savage Queen <br>
+  <a href="https://github.com/Niaomi96">GitHub</a></p>
+
+</div>
+</html>
